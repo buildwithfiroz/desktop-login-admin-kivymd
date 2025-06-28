@@ -95,7 +95,7 @@ Video To understand the simple workflow and easy management.
 
 > [!NOTE]
 >
-> ### Getting Started is Super Easy 🚀
+> ### Getting Started is Super Easy 
 >
 > This project isn’t just easy to use — it’s also **easy to set up and integrate into your own system**. Follow the steps below to get it running on your machine in minutes:
 >
@@ -140,12 +140,12 @@ Video To understand the simple workflow and easy management.
 > python admin.py
 > ```
 >
-> ✅ That’s it! You’re now up and running. Feel free to customize or extend the app to fit your workflow.
+> That’s it! You’re now up and running. Feel free to customize or extend the app to fit your workflow.
 
 <b>
 
 > [!TIP] 
-> ### ⚡ Tech Used
+> ###  Tech Used
 >
 >   <img src='https://d17azs2fqvxy2n.cloudfront.net/icon2.0/python-original.svg' alt="python" width="50"/>  <img src='https://d17azs2fqvxy2n.cloudfront.net/icon2.0/sqlite-original.svg' alt="Sqllite3" width="50"/>  <img src='https://d17azs2fqvxy2n.cloudfront.net/icon2.0/apacheairflow-original.svg' alt="Login Screen" width="50"/>  <img src='https://kivy.org/logos/kivy-logo-black-64.png' alt="Login Screen" width="50"/>
 
