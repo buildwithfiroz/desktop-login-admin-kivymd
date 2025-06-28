@@ -1,0 +1,394 @@
+
+MDScreen:
+    name: 'admin'
+
+
+    AsyncImage:
+        source: 'img/bg32.webp'
+        pos_hint: {'center_x': 0.5,'center_y': 0.5}
+        size_hint: None, None  # Disables automatic resizing based on parent
+        size_hint: None, None  # Disables automatic resizing based on parent
+        size: '1600sp', '1000sp'  # Set width to 2100dp and height to 1100dp
+        opacity: 0.5
+        keep_ratio:False
+        allow_stretch:True
+
+
+    AsyncImage:
+        source: 'img/cart.png'
+        pos_hint: {'center_x': 0.92,'center_y': 0.1}
+        size_hint: None, None  # Disables automatic resizing based on parent
+        size_hint: None, None  # Disables automatic resizing based on parent
+        size: '650sp', '650sp'  # Set width to 2100dp and height to 1100dp
+        opacity: 0.5
+
+
+
+    MD3Card:
+        id: card 
+        padding: ('10dp', '10dp', '10dp', '10dp')
+        size_hint: None, None
+        size: '100dp','100dp'
+        height: '590dp'
+        opacity: 1
+        pos_hint: {'center_x': .083,'center_y': .42}
+        elevation: 1
+
+
+        MDRelativeLayout:
+
+            MDLabel:
+                id: label
+                text: 'Admin Home'
+                theme_text_color: 'Custom'
+                pos_hint: {'center_x': 0.68,'center_y': 0.99}
+                text_color: 0.5 , 0.5 , 0.5 , 1
+                bold: True
+                font_size: "11sp"
+                opacity: 0.8
+
+            MDFloatingActionButton:
+                icon: "home"
+                elevation_normal: 15
+                pos_hint: {'center_x': 0.5,'center_y': 0.86}
+                md_bg_color: app.theme_cls.primary_color  
+                text_color: 1,1,1, 0.8 
+
+
+            MDIconButton:
+                icon: "eye"
+                icon_size: "50dp"
+                pos_hint: {'center_x': 0.5,'center_y': 0.73}
+                on_press:
+                    app.switch_to_view_screen()
+                    app.refresh_page()
+
+
+            MDIconButton:
+                icon: "plus"
+                icon_size: "50dp"
+                pos_hint: {'center_x': 0.5,'center_y': 0.6}
+                on_release: app.switch_to_add_sceen()
+
+            MDIconButton:
+                icon: "calendar"
+                icon_size: "50dp"
+                pos_hint: {'center_x': 0.5,'center_y': 0.44}
+                on_release: app.show_date_picker()
+
+
+
+          
+                
+
+    # MDFloatLayout:
+    #     Image:
+    #         source: 'img/bg.png'
+    #         pos_hint: {'center_x': 0.9,'center_y': 0.5}
+    #         size_hint: None, None  # Disables automatic resizing based on parent
+    #         size: '2100dp', '100dp'  # Set width to 2100dp and height to 1100dp
+    #         opacity: 0.9
+
+    
+
+    
+    MD3Card:
+        id: card 
+        padding: ('10dp', '10dp', '10dp', '10dp')
+        size_hint: None, None
+        size: '1100dp','1100dp'
+        height: '100dp'
+        opacity: 1
+        pos_hint: {'center_x': .5,'center_y': .9}
+        elevation: 1
+
+        MDRelativeLayout:
+            GridLayout:
+                cols: 4
+                size_hint: None, None
+                size: self.minimum_size
+                pos_hint: {'center_x': 2.67, 'center_y': 0.5}
+                spacing: '9dp'
+
+                MDIconButton:
+                    icon: "message"
+                    theme_text_color: "Custom"
+                    color: 0.5,0.5,0.5,0.5
+
+                MDIconButton:
+                    icon: "bell"
+                    theme_text_color: "Custom"
+                    color: 0.5,0.5,0.5,0.5
+                    badge_text: "1"  # Display a badge indicating one unread message
+
+                MDIconButton:
+                    icon: "logout"
+                    theme_text_color: "Custom"
+                    opacity:0.7
+                    on_release: app.switch_to_login()
+
+                AsyncImage:
+                    source: 'img/wans.png'
+                    pos_hint: {'center_x': 0.84,'center_y': .5}
+                    size_hint: None, None  # Disables automatic resizing based on parent
+
+
+        MDRelativeLayout:
+
+
+            AsyncImage:
+                source: 'img/logo.png'
+                pos_hint: {'center_x': -0.92,'center_y': .5}
+                size_hint: None, None  # Disables automatic resizing based on parent
+
+            
+
+
+            MDLabel:
+                id: label
+                text: 'Admin Panel'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": -0.357, "center_y": .38}
+                text_color: 0.5 , 0.5 , 0.5 , 1
+                bold: True
+                font_size: "11sp"
+                opacity: 0.8
+
+            MDLabel:
+                id: label
+                text: 'NEXGENO'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": -0.37, "center_y": .6}
+                text_color: 1 , 1 , 1 , 1
+                bold: True
+                font_style: 'Body1'
+                font_size: "20sp"
+                opacity: 0.9
+
+
+            # MDIconButton:
+            #     icon: "message"
+            #     theme_text_color: "Custom"
+            #     pos_hint: {"center_x": .57, "center_y": .38}
+            #     text_color: app.theme_cls.primary_color  # Set icon color to primary color
+
+            # MDIconButton:
+            #     icon: "bell"
+            #     theme_text_color: "Custom"
+            #     pos_hint: {"center_x": .57, "center_y": .38}
+            #     text_color: app.theme_cls.primary_color  # Set icon color to primary color
+            #     badge_text: "1"  # Display a badge indicating one unread message
+
+            # MDIconButton:
+            #     icon: "logout"
+            #     theme_text_color: "Custom"
+            #     pos_hint: {"center_x": .57, "center_y": .38}
+            #     text_color: app.theme_cls.primary_color
+
+
+            # MDLabel:
+            #     id: label2
+            #     text: 'Firoz Wans'
+            #     theme_text_color: 'Custom'
+            #     pos_hint: {"center_x": 1.4, "center_y": .5}
+            #     text_color: 1 , 1 , 1 , 1
+            #     bold: True
+            #     font_size: "12sp"
+            #     opacity: 0.7
+
+
+        MDRelativeLayout:
+
+            MDLabel:
+                id: label3
+                text: 'Welcome To Admin Panel Center'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": -0.3, "center_y": -1}
+                text_color: 0,0,0,1
+                bold: True
+                font_size: "16sp"
+                opacity: 0.8
+
+
+            MDTextField:
+                hint_text: "Search"
+                left_icon: "magnify"
+                icon_left: "magnify"
+                hint_text: "Search"
+                pos_hint: {"center_x": -0.5, "center_y": -2}
+                width: "300dp"  # Set the width of the search bar
+                mode: "line"
+
+    
+
+              
+
+            MDFillRoundFlatIconButton:
+                icon: "help"
+                text: " Need Help"
+                theme_text_color: "Custom"
+                theme_icon_color: "Custom"
+                pos_hint: {"center_x": -0.5, "center_y": -3}
+                on_release: app.open_help_dialog()
+
+
+
+    MD3Card:
+        id: card 
+        padding: ('10dp', '10dp', '10dp', '10dp')
+        size_hint: None, None
+        size: '850dp','850dp'
+        height: '500dp'
+        opacity: 1
+        pos_hint: {'center_x': .5,'center_y': 0.1}
+        elevation: 1
+
+        MDRelativeLayout:
+
+            MDFloatingActionButton:
+                icon: "eye"
+                elevation_normal: 15
+                pos_hint: {'center_x': .08,'center_y': 0.87}
+                md_bg_color: 1,1,1, 0.8 # Set the background color to grey
+                text_color:app.theme_cls.primary_color  # Set the icon color to purple
+                on_press:
+                    app.switch_to_view_screen()
+                    app.refresh_page()
+                    self.icon = "eye-off" if self.icon == "eye" else "eye"
+
+            MDLabel:
+                id: label
+                text: 'Agent Info'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": 0.67, "center_y": .9}
+                text_color: 1 , 1 , 1 , 1
+                bold: True
+                font_size: "18sp"
+                opacity: 0.7
+
+            MDLabel:
+                id: label
+                text: 'View Deatils About The Agent Entry'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": 0.67, "center_y": .85}
+                text_color: 0.5 , 0.5 , 0.5 , 1
+                bold: True
+                font_size: "11sp"
+                opacity: 0.8
+
+
+
+            MDFloatingActionButton:
+                icon: "plus"
+                elevation_normal: 15
+                pos_hint: {'center_x': .08,'center_y': 0.5}
+                md_bg_color: 1,1,1, 0.8  # Set the background color to grey
+                text_color:app.theme_cls.primary_color  # Set the icon color to purple
+                on_press: 
+                    app.switch_to_add_sceen()
+                    self.icon = "checkbox-marked" if self.icon == "plus" else "plus"
+                  
+
+            MDLabel:
+                id: label
+                text: 'Add Agent'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": 0.67, "center_y": .53}
+                bold: True
+                text_color: 1 , 1 , 1 , 1
+                font_size: "18sp"
+                opacity: 0.7
+
+            MDLabel:
+                id: label
+                text: 'Add New Agent Inside The DataBase'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": 0.67, "center_y": .48}
+                text_color: 0.5 , 0.5 , 0.5 , 1
+                bold: True
+                font_size: "11sp"
+                opacity: 0.8
+
+
+            MDFloatingActionButton:
+                icon: "chart-bar"
+                elevation_normal: 15
+                pos_hint: {'center_x': .64,'center_y': 0.87}
+                md_bg_color: 1,1,1, 0.8  # Set the background color to grey
+                text_color:app.theme_cls.primary_color  # Set the icon color to purple
+                
+
+
+            MDLabel:
+                id: label
+                text: 'Calendar'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x":1.24, "center_y": .53}
+                bold: True
+                text_color: 1 , 1 , 1 , 1
+                font_size: "18sp"
+                opacity: 0.7
+
+
+            MDLabel:
+                id: label
+                text: 'View Or Create Appointments'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": 1.24, "center_y": .48}
+                text_color: 0.5 , 0.5 , 0.5 , 1
+                bold: True
+                font_size: "11sp"
+                opacity: 0.8
+
+            MDFloatingActionButton:
+                icon: "calendar"
+                elevation_normal: 15
+                pos_hint: {'center_x': .64,'center_y': 0.5}
+                md_bg_color: 1,1,1, 0.8  # Set the background color to grey
+                text_color:app.theme_cls.primary_color  # Set the icon color to purple
+                on_release: app.show_date_picker()
+
+            MDLabel:
+                id: label
+                text: 'Statistics'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": 1.24, "center_y": .9}
+                bold: True
+                text_color: 1 , 1 , 1 , 1
+                font_size: "18sp"
+                opacity: 0.7
+
+            MDLabel:
+                id: label
+                text: 'Get The Detail Insight'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": 1.24, "center_y": .85}
+                text_color: 0.5 , 0.5 , 0.5 , 1
+                bold: True
+                font_size: "11sp"
+                opacity: 0.8
+
+            MDSeparator:    
+                pos_hint: {"center_x": 0.5, "center_y": .69}
+                width: 30
+
+            MDSeparator: 
+                orientation: 'vertical'   
+                pos_hint: {"center_x": 0.5, "center_y": .5}
+
+            
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+

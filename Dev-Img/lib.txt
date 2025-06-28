@@ -1,0 +1,8 @@
+Following are the library used to create the project 
+
+1. Kivy                 - To create app 
+2. Time / date          - To Get time & Date 
+3. pyautogui            - To Take Screen - Short 
+4. os                   - To Get cwd ( Current working dir )
+5. random               - To Take randon screen short in different time frame 
+6. sqlite3              - To Store user infromation

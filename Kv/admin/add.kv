@@ -1,0 +1,255 @@
+
+
+MDScreen:
+    name: 'add_sceen' 
+
+
+    MD3Card:
+        id: card 
+        padding: ('10dp', '10dp', '10dp', '10dp')
+        size_hint: None, None
+        size: '1100dp','1100dp'
+        height: '100dp'
+        opacity: 1
+        pos_hint: {'center_x': .5,'center_y': .9}
+        elevation: 1
+
+        MDRelativeLayout:
+            GridLayout:
+                cols: 4
+                size_hint: None, None
+                size: self.minimum_size
+                pos_hint: {'center_x': 1.79, 'center_y': 0.5}
+                spacing: '9dp'
+
+                MDIconButton:
+                    icon: "message"
+                    theme_text_color: "Custom"
+                    color: 0.5,0.5,0.5,0.5
+
+                MDIconButton:
+                    icon: "bell"
+                    theme_text_color: "Custom"
+                    color: 0.5,0.5,0.5,0.5
+                    badge_text: "1"  # Display a badge indicating one unread message
+
+                MDIconButton:
+                    icon: "logout"
+                    theme_text_color: "Custom"
+                    opacity:0.7
+                    on_release: app.switch_to_login()
+
+                AsyncImage:
+                    source: 'img/wans.png'
+                    pos_hint: {'center_x': 0.84,'center_y': .5}
+                    size_hint: None, None  # Disables automatic resizing based on parent
+
+
+        MDRelativeLayout:
+
+
+            AsyncImage:
+                source: 'img/logo.png'
+                pos_hint: {'center_x': -0.92,'center_y': .5}
+                size_hint: None, None  # Disables automatic resizing based on parent
+
+            
+
+
+            MDLabel:
+                id: label
+                text: 'Admin Panel'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": -0.357, "center_y": .38}
+                text_color: 0.5 , 0.5 , 0.5 , 1
+                bold: True
+                font_size: "11sp"
+                opacity: 0.8
+
+            MDLabel:
+                id: label
+                text: 'NEXGENO'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": -0.37, "center_y": .6}
+                text_color: 1 , 1 , 1 , 1
+                bold: True
+                font_style: 'Body1'
+                font_size: "20sp"
+                opacity: 0.9
+
+    MD3Card:
+        id: card 
+        padding: ('10dp', '10dp', '10dp', '10dp')
+        size_hint: None, None
+        size: '100dp','100dp'
+        height: '590dp'
+        opacity: 1
+        pos_hint: {'center_x': .083,'center_y': .42}
+        elevation: 1
+
+
+       
+
+
+
+
+
+    MD3Card:
+        id: card 
+        padding: ('10dp', '10dp', '10dp', '10dp')
+        size_hint: None, None
+        size: '980dp','980dp'
+        height: '540dp'
+        opacity: 1
+        pos_hint: {'center_x': .54,'center_y': .45}
+        elevation: 1
+
+        MDRelativeLayout:
+
+            MDLabel:
+                id: label
+                text: 'Add User'
+                theme_text_color: 'Custom'
+                pos_hint: {'center_x': 0.413,'center_y': 0.99}
+                text_color: 0.5 , 0.5 , 0.5 , 1
+                bold: True
+                font_size: "11sp"
+                opacity: 0.8
+
+            MDIconButton:
+                icon: "home"
+                icon_size: "50dp"
+                pos_hint: {'center_x': -0.07,'center_y': 0.86}
+                on_press:app.switch_to_admin()
+
+            MDIconButton:
+                icon: "eye"
+                icon_size: "50dp"
+                pos_hint: {'center_x': -0.07,'center_y': 0.69}
+                on_release: 
+                    app.switch_to_view_screen()
+                    app.refresh_page()
+
+
+            MDFloatingActionButton:
+                icon: "check"
+                elevation_normal: 15
+                pos_hint: {'center_x': -0.07,'center_y': 0.54}
+                md_bg_color: app.theme_cls.primary_color  
+                text_color: 1,1,1, 0.8 
+                
+
+
+
+            MDIconButton:
+                icon: "calendar"
+                icon_size: "50dp"
+                pos_hint: {'center_x': -0.07,'center_y': 0.38}
+                on_release: app.show_date_picker()
+
+
+            FitImage:
+                source: 'img/bg.png'
+                pos_hint: {'center_x': 0.5,'center_y': 0.85}
+                size_hint: None, None  # Disables automatic resizing based on parent
+                size: '978sp', '170sp'  # Set width to 2100dp and height to 1100dp
+                radius: [36 , 36 , 0 ,0]
+
+            AsyncImage:
+                id:user_pic
+                source: 'img/wans.png'
+                pos_hint: {'center_x': 0.2,'center_y': 0.7}
+                size_hint: None, None  # Disables automatic resizing based on parent
+                size: '130sp', '130sp'  # Set width to 2100dp and height to 1100dp
+                keep_ratio:False
+                allow_stretch:True
+
+
+            MDIconButton: 
+                icon:'pencil-plus'
+                pos_hint: {'center_x': 0.27,'center_y': 0.6}
+                size_hint: None, None  # Disables automatic resizing based on parent
+                size: '130sp', '130sp'  # Set width to 2100dp and height to 1100dp
+                on_release: app.open_file_chooser()
+
+            MDTextButton:
+                text:'Edit picture or Avtavr'
+                theme_text_color: 'Custom'
+                text_color:0.11,0.63,0.95,1
+                bold: True
+                font_size: "10sp"
+                opacity: 0.8
+                pos_hint: {'center_x': 0.2,'center_y': 0.55}
+                on_release: app.open_file_chooser()
+
+            MDRoundFlatIconButton:
+                id: save_changes_button
+                text:'Save Changes'
+                text_color: 0.11,0.63,0.95,1
+                line_color: 0.11,0.63,0.95,1
+                md_bg_color:0,0,0,0
+                pos_hint: {'center_x': 0.9,'center_y': 0.54}
+                on_release: app.show_confirmation_dialog()
+                disabled: True  # Initially disable the button
+
+            MDLabel:
+                text:'Personal Information'
+                theme_text_color: 'Custom'
+                pos_hint: {"center_x": 0.52, "center_y": .45}
+                text_color:1,1,1,1
+                
+                bold: True
+                font_size: "21sp"
+                opacity: 0.7
+
+            MDTextButton:
+                text:'Add A New User '
+                theme_text_color: 'Custom'
+                text_color: 0.5 , 0.5 , 0.5 , 1
+                bold: True
+                font_size: "12sp"
+                opacity: 0.7
+                pos_hint: {"center_x": 0.06, "center_y": .35}
+                on_release: app.open_file_chooser()
+
+            
+            
+            MDTextField:
+                id: user_name
+                hint_text: "UserName"
+                icon_left: "account"
+                mode: "rectangle"
+                pos_hint: {"center_x": 0.18 , 'center_y': 0.2}
+                size_hint_x: None
+                width: "300dp"
+                max_text_length: 10
+                on_text: app.check_submit_button_state() 
+
+            MDTextField:
+                id: pass_s
+                hint_text: "Password"
+                max_text_length: 10
+                icon_left: "key"
+                mode: "rectangle"
+                pos_hint: {"center_x": 0.75 , 'center_y': 0.2}
+                size_hint_x: None
+                width: "300dp"
+                password: True  # Set the password property to hide the entered text
+                on_text: app.check_submit_button_state() 
+
+            MDIconButton:
+                id: icon_button
+                icon: "eye-off"  # Set the initial icon state to eye-off
+                pos_hint: {"center_x": 0.88 , 'center_y': 0.191}
+                on_release:
+                    pass_s.password = not pass_s.password
+                    icon_button.icon = "eye-off" if pass_s.password else "eye"  # Toggle icon based on password visibility
+
+
+
+            MDSeparator:    
+                pos_hint: {"center_x": 0.5, "center_y": .40}
+                width: 30
+
+
+
