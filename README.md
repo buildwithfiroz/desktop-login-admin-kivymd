@@ -11,10 +11,10 @@ It features a simple user login system and a powerful admin panel to manage **st
 
 <p align="left">
   <!-- Python -->
-  <img width='13%' src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=plastic" alt="Python" /> &nbsp;
-  <img width='10%' src="https://img.shields.io/badge/KivyMD-1ED760?logo=kivy&logoColor=white&style=plastic" alt="KivyMD" /> &nbsp;
-  <img width='12%' src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white&style=plastic" alt="SQLite" /> &nbsp;
-  <img width='11%' src="https://img.shields.io/badge/Image-FF6C00?logo=googlephotos&logoColor=white&style=plastic" alt="Image" /> &nbsp;
+  <img width='100' src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=plastic" alt="Python" /> &nbsp;
+  <img width='80' src="https://img.shields.io/badge/KivyMD-1ED760?logo=kivy&logoColor=white&style=plastic" alt="KivyMD" /> &nbsp;
+  <img width='100' src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white&style=plastic" alt="SQLite" /> &nbsp;
+  <img width='100' src="https://img.shields.io/badge/Image-FF6C00?logo=googlephotos&logoColor=white&style=plastic" alt="Image" /> &nbsp;
 </p>
 
 
@@ -167,13 +167,13 @@ https://github.com/user-attachments/assets/1e805e75-e203-487e-8e6e-b03d96e1b33f
 <br>
 <p align="center">
   <a href="https://github.com/buildwithfiroz">
-    <img width='22.2%' src="https://img.shields.io/badge/GitHub-@buildwithfiroz-181717?logo=github&style=plastic" alt="GitHub" /></a>  &nbsp;  &nbsp;
-  <a href="mailto:buildbyfiroz@icloud.com">
-    <img width='26%' src="https://img.shields.io/badge/Email-buildbyfiroz@icloud.com-blue?logo=gmail&style=plastic" alt="Email" /></a>  &nbsp;  &nbsp;
-  <a href="https://github.com/buildwithfiroz/desktop-login-admin-kivymd/blob/main/LICENSE">
-    <img width='11%' src="https://img.shields.io/badge/License-MIT-green?style=plastic" alt="MIT License" /></a>  &nbsp;  &nbsp;
+    <img width='230' src="https://img.shields.io/badge/GitHub-@buildwithfiroz-181717?logo=github&style=plastic" alt="GitHub" /></a>  &nbsp;  &nbsp;
+    <a href="https://github.com/buildwithfiroz/desktop-login-admin-kivymd/blob/main/LICENSE">
+    <img width='120' src="https://img.shields.io/badge/License-MIT-green?style=plastic" alt="MIT License" /></a>  &nbsp;  &nbsp;
   <a href="https://github.com/buildwithfiroz/desktop-login-admin-kivymd">
-    <img width='13%' src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?style=plastic" alt="Open Source" /></a> &nbsp;  &nbsp;
+    <img width='150' src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?style=plastic" alt="Open Source" /></a> &nbsp;  &nbsp;
+  <a href="mailto:buildbyfiroz@icloud.com">
+    <img width='280' src="https://img.shields.io/badge/Email-buildbyfiroz@icloud.com-blue?logo=gmail&style=plastic" alt="Email" /></a>  
 </p>
 
 <br>
