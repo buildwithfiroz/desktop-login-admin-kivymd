@@ -58,27 +58,27 @@ It features a simple user login system and a powerful admin panel to manage **st
 <p align="left">
   <img src="img/Final/helper_intro.png" alt="Login Screen" width="600"/>
 </p>
-<p align="left"><em>Enter your username and password to access your dashboard.</em></p>
+<p align="left"><em>Here you can create, edit, or disable user accounts..</em></p>
 
 
 ## 3. Adding a New User  
 <p align="left">
   <img src="img/Final/helper_view_page.png" alt="Login Screen" width="600"/>
 </p>
-<p align="left"><em>Enter your username and password to access your dashboard.</em></p>
+<p align="left"><em>Fill in the user details and create account.</em></p>
 
 ## 4. Managing User 
 <p align="left">
   <img src="img/Final/helper_admin_view.png" alt="Login Screen" width="600"/>
 </p>
-<p align="left"><em>Enter your username and password to access your dashboard.</em></p>
+<p align="left"><em>Toggle users Password if needed.</em></p>
 
 
 ## 5. Agent Login
 <p align="left">
   <img src="img/Final/helper_user.png" alt="Login Screen" width="600"/>
 </p>
-<p align="left"><em>Enter your username and password to access your dashboard.</em></p>
+<p align="left"><em>Once the user login they will get this notification.</em></p>
 
 
 ## 5. Summary  
