@@ -138,11 +138,17 @@ https://github.com/user-attachments/assets/1e805e75-e203-487e-8e6e-b03d96e1b33f
 > ```
 >
 > **Step 6:**  
-> Run the app  
+> Run the app to view admin pannel 
 > ```bash
 > python admin.py
 > ```
+> <br>
 >
+> Run the below cmd to view the login window
+> ```bash
+> python login.py
+> ```
+> 
 > That’s it! You’re now up and running. Feel free to customize or extend the app to fit your workflow.
 
 <br>
