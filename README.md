@@ -85,7 +85,10 @@ It features a simple user login system and a powerful admin panel to manage **st
 Video To understand the simple workflow and easy management.  
 
 
-![Dashboard](images/dashboard.png)
+
+https://github.com/user-attachments/assets/1e805e75-e203-487e-8e6e-b03d96e1b33f
+
+
 
 
 
