@@ -153,11 +153,24 @@ https://github.com/user-attachments/assets/1e805e75-e203-487e-8e6e-b03d96e1b33f
 >   <img src='https://d17azs2fqvxy2n.cloudfront.net/icon2.0/python-original.svg' alt="python" width="50"/>  <img src='https://d17azs2fqvxy2n.cloudfront.net/icon2.0/sqlite-original.svg' alt="Sqllite3" width="50"/>  <img src='https://d17azs2fqvxy2n.cloudfront.net/icon2.0/apacheairflow-original.svg' alt="Login Screen" width="50"/>  <img src='https://kivy.org/logos/kivy-logo-black-64.png' alt="Login Screen" width="50"/>
 
 
+<br> <br>
 
-## 👨‍💻 Author
-For questions or support, reach out to:  
+## 👨‍💻 Author - Contact Information
 
-- [@buildwithfiroz](https://github.com/buildwithfiroz)
-- buildbyfiroz@icloud.com  
 
+<br>
+<p align="center">
+  <a href="https://github.com/buildwithfiroz">
+    <img width='22.2%' src="https://img.shields.io/badge/GitHub-@buildwithfiroz-181717?logo=github&style=plastic" alt="GitHub" /></a>  &nbsp;  &nbsp;
+  <a href="mailto:buildbyfiroz@icloud.com">
+    <img width='26%' src="https://img.shields.io/badge/Email-buildbyfiroz@icloud.com-blue?logo=gmail&style=plastic" alt="Email" /></a>  &nbsp;  &nbsp;
+  <a href="https://github.com/buildwithfiroz/desktop-login-admin-kivymd/blob/main/LICENSE">
+    <img width='11%' src="https://img.shields.io/badge/License-MIT-green?style=plastic" alt="MIT License" /></a>  &nbsp;  &nbsp;
+  <a href="https://github.com/buildwithfiroz/desktop-login-admin-kivymd">
+    <img width='13%' src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?style=plastic" alt="Open Source" /></a> &nbsp;  &nbsp;
+</p>
+
+<br>
+
+<p align="center"><b>Made with ❤️ by Firoz</b></p>
 
