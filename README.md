@@ -145,7 +145,7 @@ https://github.com/user-attachments/assets/1e805e75-e203-487e-8e6e-b03d96e1b33f
 >
 > That’s it! You’re now up and running. Feel free to customize or extend the app to fit your workflow.
 
-<b>
+<br>
 
 > [!TIP] 
 > ###  Tech Used
